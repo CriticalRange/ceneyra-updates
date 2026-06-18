@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "notes": "Initial updater endpoint placeholder.",
+  "pub_date": "2026-06-18T00:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "",
+      "url": "https://criticalrange.github.io/ceneyra-updates/"
+    }
+  }
+}
