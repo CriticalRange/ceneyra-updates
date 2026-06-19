@@ -1,11 +1,11 @@
-{
-  "version": "0.1.0",
-  "notes": "Initial updater endpoint placeholder.",
-  "pub_date": "2026-06-18T00:00:00Z",
-  "platforms": {
-    "windows-x86_64": {
-      "signature": "",
-      "url": "https://criticalrange.github.io/ceneyra-updates/"
-    }
-  }
+﻿{
+    "version":  "0.1.0",
+    "notes":  "Ceneyra Uretim v0.1.0",
+    "pub_date":  "2026-06-19T07:26:34Z",
+    "platforms":  {
+                      "windows-x86_64":  {
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRbkdLaXAzOFRzazVnYlZPRXcwU2p5T3FuY3JaVUllc0F2VDVxVFRsNnpLckJYanVCcEcrcTg2VDhaMnEyR1lXVEFCcWhhRkNuNENDMUdpZ1U0UUl1ZTY3MjBWZnRaeHc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODUzOTgwCWZpbGU6Q2VuZXlyYSDDnHJldGltXzAuMS4wX3g2NC1zZXR1cC5leGUKaThQOWlDdzZjU3I3b3pZUlJXc0t4cGhIT05XVDA2Z0lCMzZ3cHlENi9iVlA5RC9kd1lRZnVDeVhuWWE5WGUybTFUR3pVL21acGh0RjFqMlpuRlhVQ3c9PQo=",
+                                             "url":  "https://criticalrange.github.io/ceneyra-updates/Ceneyra-Uretim-0.1.0-windows-x86_64-setup.exe"
+                                         }
+                  }
 }
