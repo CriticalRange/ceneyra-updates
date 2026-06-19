@@ -1,11 +1,11 @@
 {
-    "version":  "0.1.6",
-    "notes":  "Ceneyra Uretim v0.1.6",
-    "pub_date":  "2026-06-19T11:32:14Z",
-    "platforms":  {
-                      "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRbkdLaXAzOFRza3pCdDRwTGNsSFlDQUdJQ0JTKzJJVEVGb0k2ZmE2RmlEQ1ZLVGNabDlGV2FnbDdGN2lmWjg0aXc2YkEwZ2hBSFp3NmJxV1RKNjJCSFBYUTNGL2tQWkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODY4NzIxCWZpbGU6Q2VuZXlyYSDDnHJldGltXzAuMS42X3g2NC1zZXR1cC5leGUKQ1FMZnVkRkZZZTdHYmZQQ0l4Nk9VR3hVdWQwU0ZtR2R6eWVxM0Nmc0oxV2N4b1Z2RGFlRHkwSzJVdE9QMlFDVnZCamxLZWlBTllDenlkclhObmd1RGc9PQo=",
-                                             "url":  "https://criticalrange.github.io/ceneyra-updates/Ceneyra-Uretim-0.1.6-windows-x86_64-setup.exe"
-                                         }
-                  }
+  "version": null,
+  "notes": "Ceneyra Uretim v",
+  "pub_date": "2026-06-19T18:08:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRbkdLaXAzOFRzazI4TWtmZ0kwdjh6a1dydUozT3ZiN0cxT2IxV0YyUmRQemtzVFBCT0dWSG94ZjJONmFVcVFYUm5MT3NiajhNT2NqMnVYZXphU2wwcGpKdWlPWXBZb2dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODkyNDc3CWZpbGU6Q2VuZXlyYSDDnHJldGltXzAuMS45X3g2NC1zZXR1cC5leGUKV0JsSWYvYlB6MzE0MnJRTjRIZWcwek9hdmRBUXR2R1ZDdHVWRXkwZTVoNDRvQmpJU2RhaXYyaExHdFFyTGxacG9nWVhGSEUybXRsUThRdnNsbzV1RFE9PQo=",
+      "url": "https://criticalrange.github.io/ceneyra-updates/Ceneyra-Uretim--windows-x86_64-setup.exe"
+    }
+  }
 }
