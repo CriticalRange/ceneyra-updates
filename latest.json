@@ -1,11 +1,11 @@
 {
-    "version":  "0.2.4",
-    "notes":  "Ceneyra Inner v0.2.4",
-    "pub_date":  "2026-06-27T00:00:00Z",
+    "version":  "0.2.5",
+    "notes":  "Ceneyra Inner v0.2.5",
+    "pub_date":  "2026-06-28T00:00:00Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRbkdLaXAzOFRzazFYdWt4TXYrQS9EOG12ZGZkQmdFOXpjc1k1d3RteW1DQjc2c0hhY0lNUmdUTlJsV0hIVW5nK2RmR0RNRUthOUx1OHZacnlWaXdxREt6WFllOUs1N1E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNTA3ODc2CWZpbGU6Q2VuZXlyYSBJbm5lcl8wLjIuNF94NjQtc2V0dXAuZXhlCjlWbjIxYldOaEpHdWdJWTJmcWRySWFJWjg3TWY1WXVRa0ZHQ1cwT2g2cHpHTVZoMHJBcFhiUG1VTEVhSk9PQ20xT2ZIWlc4eXo0VFh0NG5kSWN5K0RnPT0K",
-                                             "url":  "https://criticalrange.github.io/ceneyra-updates/Ceneyra-Inner-0.2.4-windows-x86_64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRbkdLaXAzOFRza3l5ZUNhQXZFRU9kYzN6MnlkVFhUSmZPWTZpelMwYjM2MjdtU2VnemYvMHp2TE9JdDk5eFhOUWVqbXpLUDMvSnNjMW5UbmU3NjZVWS81aWR0QmFSNmdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNjc4NzA2CWZpbGU6Q2VuZXlyYSBJbm5lcl8wLjIuNV94NjQtc2V0dXAuZXhlCnZEZEN1WWtaQnhRd29QdmUxdTBaZEM4dGMzT2xpYzNoanlQZVhOcExVSVUwdjh6b09pK2tMc1JVaFpYOUdhMmNRZTg0c2FUd05mWlpZaW9WVVVVR0NBPT0K",
+                                             "url":  "https://criticalrange.github.io/ceneyra-updates/Ceneyra-Inner-0.2.5-windows-x86_64-setup.exe"
                                          }
                   }
 }
