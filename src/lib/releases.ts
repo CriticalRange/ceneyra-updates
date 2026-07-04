@@ -1,8 +1,6 @@
 import { readFileSync, readdirSync, statSync } from "fs";
 import { join } from "path";
 
-const BASE = "/ceneyra-updates";
-
 export interface Platform {
   signature: string;
   url: string;
@@ -112,8 +110,8 @@ export function getVersionHistory(): VersionEntry[] {
       version: parsed.version,
       date: "", // filled below from stat
       size,
-      url: `${BASE}/${exe}`,
-      signature: hasSig ? `${BASE}/${sigFile}` : "",
+      url: `/${exe}`,
+      signature: hasSig ? `/${sigFile}` : "",
     });
   }
 
