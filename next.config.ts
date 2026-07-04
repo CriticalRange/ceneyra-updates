@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: process.cwd(),
-  },
+  output: "export",
+  // GitHub Pages serves from /ceneyra-updates subdirectory
+  basePath: "/ceneyra-updates",
 };
 
 export default nextConfig;
