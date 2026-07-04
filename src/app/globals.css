@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-/* ============================================
-   Ceneyra Inner — Anti-AI Aesthetic
-   Neo-brutalist + warm paper + Turkish indie
-   ============================================ */
-
 @theme inline {
   --color-paper: #faf5ed;
   --color-ink: #1a1a1a;

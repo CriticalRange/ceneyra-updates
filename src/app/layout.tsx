@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ceneyra Inner — Güncellemeler",
   description:
-    "Ceneyra Inner için en son güncellemeleri indirin. Windows için hafif ve hızlı içerik yönetim aracı.",
+    "Ceneyra Inner için en son güncellemeleri indirin.",
   keywords: ["Ceneyra", "Inner", "download", "updates", "Windows"],
   openGraph: {
     title: "Ceneyra Inner — Güncellemeler",
     description:
-      "Ceneyra Inner için en son güncellemeleri indirin. Windows için hafif ve hızlı içerik yönetim aracı.",
+      "Ceneyra Inner için en son güncellemeleri indirin.",
     type: "website",
   },
 };

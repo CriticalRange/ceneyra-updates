@@ -15,10 +15,6 @@ function Footer() {
   );
 }
 
-/* ============================================
-   Hero — büyük tipografi, asimetrik
-   ============================================ */
-
 function Hero({ version, date }: { version: string; date: string }) {
   return (
     <section className="relative overflow-hidden border-b-[2px] border-[#1a1a1a]">
@@ -26,7 +22,7 @@ function Hero({ version, date }: { version: string; date: string }) {
       <div className="absolute inset-0 stars pointer-events-none" />
 
       <div className="relative mx-auto max-w-4xl px-5 pt-4 pb-20 sm:pb-28">
-        {/* Version badge — hard shadow, warm yellow */}
+        {/* Version badge */}
         <div className="stagger-1 mb-8 inline-flex items-center gap-2 border-[2px] border-[#1a1a1a] bg-[#ffd166] px-4 py-1.5 shadow-hard-sm">
           <span className="inline-block h-2 w-2 rounded-full bg-[#16a34a]" />
           <span className="text-[13px] font-bold text-[#5c3d00] font-mono tracking-tight">
@@ -34,7 +30,7 @@ function Hero({ version, date }: { version: string; date: string }) {
           </span>
         </div>
 
-        {/* Big heading — left aligned, not centered */}
+        {/* Big heading */}
         <h1 className="stagger-2 mb-6 max-w-2xl text-[clamp(2.5rem,6vw,5rem)] font-extrabold leading-[0.95] tracking-tight">
           Ceneyra Inner{" "}
           <span className="text-[#16a34a]">İndirmeleri</span>
@@ -69,10 +65,6 @@ function Hero({ version, date }: { version: string; date: string }) {
   );
 }
 
-/* ============================================
-   Download Card — brutalist, hard shadow
-   ============================================ */
-
 function DownloadCard({
   version,
   size,
@@ -91,13 +83,13 @@ function DownloadCard({
         En güncel sürüm
       </p>
 
-      {/* Main card — thick border, no shadow */}
+      {/* Main card */}
       <div className="border-[2px] border-[#1a1a1a] bg-white transition-all -rotate-[0.3deg]">
         {/* Card interior */}
         <div className="flex flex-col gap-6 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
           {/* Left: platform info */}
           <div className="flex items-start gap-4">
-            {/* Windows logo — custom simple */}
+            {/* Windows logo */}
             <div className="flex h-12 w-12 shrink-0 items-center justify-center border-[2px] border-[#1a1a1a] bg-[#faf5ed] shadow-hard-sm">
               <svg
                 className="h-5 w-5"
@@ -119,7 +111,7 @@ function DownloadCard({
             </div>
           </div>
 
-          {/* Right: fat download button — red, hard shadow */}
+          {/* Right: download button */}
           <a
             href={url}
             className="thud flex items-center justify-center gap-2 border-[2px] border-[#1a1a1a] bg-[#16a34a] px-8 py-3.5 text-[15px] font-bold text-white shadow-hard hover:shadow-hard-hover hover:bg-[#15803d] transition-all shrink-0 select-none"
@@ -165,10 +157,6 @@ function DownloadCard({
   );
 }
 
-/* ============================================
-   Version History — sade liste, tablo değil
-   ============================================ */
-
 function VersionHistory({
   versions,
 }: {
@@ -182,7 +170,7 @@ function VersionHistory({
         Sürüm geçmişi
       </p>
 
-      {/* Squiggle divider */}
+      {/* Squiggly divider */}
       <div className="squiggle mb-8" />
 
       <div className="border-[2px] border-[#1a1a1a] bg-white">
@@ -235,10 +223,6 @@ function VersionHistory({
     </section>
   );
 }
-
-/* ============================================
-   Ana sayfa
-   ============================================ */
 
 export default function Home() {
   const latestRelease = getLatestRelease();
