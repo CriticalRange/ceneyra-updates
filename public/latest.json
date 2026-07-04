@@ -1,11 +1,11 @@
 {
-    "version":  "0.4.0",
-    "notes":  "Ceneyra Inner v0.4.0",
+    "version":  "0.4.1",
+    "notes":  "Ceneyra Inner v0.4.1",
     "pub_date":  "2026-07-04T12:13:42Z",
     "platforms":  {
                       "windows-x86_64":  {
                                              "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRbkdLaXAzOFRza3lWRk1xMWNEeS9ESlhRSUR3TzlRdnJCNXZIczBGS0UwZXY5bnVMWmo0bHdOS1ZsK1dkV2RGUlZjc0pScTlCZUZmNmRKN0JiemE0M2VqN2xzVk9hOVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMTk4ODIyCWZpbGU6Q2VuZXlyYSBJbm5lcl8wLjQuMF94NjQtc2V0dXAuZXhlCkI5aGhZNUVUTEtDZ1Y5UVdiZE1YYkN4a2ZNVWFyUnlMU3JHSmV3YldUbU9YTThHdlhXODlVNmlVZUlBSS9YMlViUTkwcE5aZTZ6YnFMN2srR2ZMU0FnPT0K",
-                                             "url":  "https://inner.ceneyra.com/Ceneyra-Inner-0.4.0-windows-x86_64-setup.exe"
+                                             "url":  "https://inner.ceneyra.com/Ceneyra-Inner-0.4.1-windows-x86_64-setup.exe"
                                          }
                   }
 }
