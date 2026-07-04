@@ -5,61 +5,33 @@ import {
   formatDate,
 } from "@/lib/releases";
 
-function Footer() {
-  return (
-    <footer className="border-t-[2px] border-[#1a1a1a] bg-[#faf5ed]">
-      <div className="mx-auto max-w-4xl px-5 py-8 text-center text-[13px] text-[#6b6b6b]">
-        Ceneyra Inner &copy; {new Date().getFullYear()}
-      </div>
-    </footer>
-  );
-}
+/* ============================================
+   Ceneyra Inner — Güncelleme Portalı
+   Ana uygulama ile aynı tasarım dili:
+   sıcak bej, yumuşak gölge, glass panel,
+   zümrüt yeşili aksan, büyük radius.
+   ============================================ */
 
 function Hero({ version, date }: { version: string; date: string }) {
   return (
-    <section className="relative overflow-hidden border-b-[2px] border-[#1a1a1a]">
-      {/* Dot pattern bg */}
-      <div className="absolute inset-0 stars pointer-events-none" />
-
-      <div className="relative mx-auto max-w-4xl px-5 pt-4 pb-20 sm:pb-28">
+    <section className="relative overflow-hidden border-b border-[#d8d6ce]">
+      <div className="relative mx-auto max-w-4xl px-6 pt-6 pb-16 sm:pb-20">
         {/* Version badge */}
-        <div className="stagger-1 mb-8 inline-flex items-center gap-2 border-[2px] border-[#1a1a1a] bg-[#ffd166] px-4 py-1.5 shadow-hard-sm">
-          <span className="inline-block h-2 w-2 rounded-full bg-[#16a34a]" />
-          <span className="text-[13px] font-bold text-[#5c3d00] font-mono tracking-tight">
+        <div className="enter-1 mb-6 inline-flex items-center gap-2 rounded-full border border-[#d8d6ce] bg-white/80 px-4 py-1.5 backdrop-blur-sm">
+          <span className="inline-block h-2 w-2 rounded-full bg-[#059669]" />
+          <span className="text-[13px] font-semibold text-[#60636a]">
             v{version} &mdash; {formatDate(date)}
           </span>
         </div>
 
-        {/* Big heading */}
-        <h1 className="stagger-2 mb-6 max-w-2xl text-[clamp(2.5rem,6vw,5rem)] font-extrabold leading-[0.95] tracking-tight">
+        <h1 className="enter-2 mb-4 text-[clamp(2.2rem,5vw,3.5rem)] font-extrabold leading-[1.05] tracking-tight text-[#111113]">
           Ceneyra Inner{" "}
-          <span className="text-[#16a34a]">İndirmeleri</span>
+          <span className="text-[#059669]">İndirmeleri</span>
         </h1>
 
-        <p className="stagger-3 mb-10 max-w-lg text-[17px] leading-relaxed text-[#6b6b6b]">
+        <p className="enter-3 mb-0 text-[16px] leading-relaxed text-[#60636a]">
           Aşağıda Ceneyra Inner için indirmeleri bulabilirsiniz.
         </p>
-
-        {/* Jump link */}
-        <a
-          href="#indir"
-          className="stagger-4 inline-flex items-center gap-2 text-[14px] font-bold text-[#16a34a] hover:text-[#15803d] transition-colors group"
-        >
-          <span>Aşağıya bak</span>
-          <svg
-            className="h-4 w-4 group-hover:translate-y-1 transition-transform"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
-        </a>
       </div>
     </section>
   );
@@ -77,50 +49,55 @@ function DownloadCard({
   signature: string;
 }) {
   return (
-    <section id="indir" className="mx-auto max-w-4xl px-5 py-16 sm:py-24">
-      {/* Section label */}
-      <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]">
+    <section className="mx-auto max-w-4xl px-6 py-12 sm:py-16">
+      <p className="mb-3 text-[11px] font-extrabold uppercase tracking-[0.08em] text-[#60636a]">
         En güncel sürüm
       </p>
 
-      {/* Main card */}
-      <div className="border-[2px] border-[#1a1a1a] bg-white transition-all -rotate-[0.3deg]">
-        {/* Card interior */}
-        <div className="flex flex-col gap-6 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
-          {/* Left: platform info */}
-          <div className="flex items-start gap-4">
-            {/* Windows logo */}
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center border-[2px] border-[#1a1a1a] bg-[#faf5ed] shadow-hard-sm">
-              <svg
-                className="h-5 w-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M3 12V6.5l8-1.09V12H3zm0 .73V18l8-1.09V12.73H3zm9-5.86L21 5.5v6.23h-9V6.87zm0 .73V12h9v6.23l-9 1.37V7.6z" />
-              </svg>
+      {/* Glass panel card */}
+      <div className="panel overflow-hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr_auto] gap-5 sm:gap-6 p-6 sm:p-8 items-center">
+          {/* Windows logo — big, standalone */}
+          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white shadow-sm border border-[#ecebe6]">
+            <svg
+              className="h-8 w-8"
+              viewBox="0 0 4875 4875"
+            >
+              <path d="M0 0h2311v2310H0zm2564 0h2311v2310H2564zM0 2564h2311v2311H0zm2564 0h2311v2311H2564" />
+            </svg>
+          </div>
+
+          {/* Platform info */}
+          <div>
+            <div className="text-[15px] font-bold text-[#111113]">
+              Windows x64
             </div>
-            <div>
-              <div className="text-[16px] font-bold">Windows x64</div>
-              <div className="text-[13px] text-[#6b6b6b] mt-0.5">
-                Windows 10/11 &bull;{" "}
-                {size > 0 ? formatBytes(size) : "~5 MB"}
-              </div>
-              <div className="text-[12px] text-[#6b6b6b] mt-0.5 font-mono">
-                v{version}
-              </div>
+            <div className="text-[13px] text-[#60636a] mt-0.5">
+              Windows 10/11 &bull;{" "}
+              {size > 0 ? formatBytes(size) : "~5 MB"}
+            </div>
+            <div className="text-[12px] text-[#60636a] mt-0.5">
+              v{version}
             </div>
           </div>
 
-          {/* Right: download button */}
+          {/* Download button */}
           <a
             href={url}
-            className="thud flex items-center justify-center gap-2 border-[2px] border-[#1a1a1a] bg-[#16a34a] px-8 py-3.5 text-[15px] font-bold text-white shadow-hard hover:shadow-hard-hover hover:bg-[#15803d] transition-all shrink-0 select-none"
+            className="flex items-center justify-center gap-2 rounded-xl px-8 py-3 text-[14px] font-bold text-white shrink-0 select-none transition-all hover:-translate-y-px"
+            style={{
+              background:
+                "linear-gradient(165deg, #101113, #1d1e22 48%, #08090a)",
+              border: "1px solid rgba(255,255,255,0.12)",
+              boxShadow:
+                "0 14px 30px rgba(0,0,0,0.24), inset 0 1px 0 rgba(255,255,255,0.12)",
+            }}
           >
             <svg
-              className="h-5 w-5"
+              className="h-4 w-4"
               fill="none"
               stroke="currentColor"
-              strokeWidth={3}
+              strokeWidth={2.5}
               viewBox="0 0 24 24"
             >
               <path
@@ -135,12 +112,12 @@ function DownloadCard({
 
         {/* Signature row */}
         {signature && (
-          <div className="border-t-[2px] border-[#1a1a1a] bg-[#faf5ed] px-6 py-3 sm:px-8">
+          <div className="border-t border-[#d8d6ce] bg-[#f8f7f4] px-6 py-3 sm:px-8">
             <div className="flex items-start gap-2.5 text-[12px]">
-              <span className="mt-0.5 shrink-0 font-mono font-bold text-[#16a34a]">
+              <span className="mt-0.5 shrink-0 font-bold text-[#059669]">
                 *.sig
               </span>
-              <span className="text-[#6b6b6b] break-all font-mono text-[11px] leading-relaxed">
+              <span className="text-[#60636a] break-all text-[11px] leading-relaxed">
                 {signature.substring(0, 96)}...
               </span>
             </div>
@@ -148,10 +125,9 @@ function DownloadCard({
         )}
       </div>
 
-      {/* Small note under card */}
-      <p className="mt-4 text-[12px] text-[#6b6b6b] pl-1">
-        İndirdikten sonra sağ tık &rarr; Özellikler &rarr; Dijital
-        İmzalar&apos;dan imzayı doğrulayabilirsin.
+      <p className="mt-3 text-[12px] text-[#60636a] pl-1">
+        Sağ tık &rarr; Özellikler &rarr; Dijital İmzalar&apos;dan
+        doğrulayabilirsin.
       </p>
     </section>
   );
@@ -165,56 +141,48 @@ function VersionHistory({
   if (versions.length === 0) return null;
 
   return (
-    <section id="gecmis" className="mx-auto max-w-4xl px-5 py-16 sm:py-20">
-      <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]">
+    <section className="mx-auto max-w-4xl px-6 py-12 sm:py-16">
+      <p className="mb-4 text-[11px] font-extrabold uppercase tracking-[0.08em] text-[#60636a]">
         Sürüm geçmişi
       </p>
 
-      {/* Squiggly divider */}
-      <div className="squiggle mb-8" />
-
-      <div className="border-[2px] border-[#1a1a1a] bg-white">
-        {/* Header row */}
-        <div className="grid grid-cols-[1fr_auto_auto] gap-4 items-center border-b-[2px] border-[#1a1a1a] bg-[#faf5ed] px-5 py-2.5 text-[11px] font-bold uppercase tracking-[0.15em] text-[#6b6b6b]">
+      <div className="panel overflow-hidden">
+        {/* Header */}
+        <div className="grid grid-cols-[1fr_auto_auto] gap-4 items-center border-b border-[#d8d6ce] bg-[#f8f7f4] px-6 py-2.5 text-[11px] font-extrabold uppercase tracking-[0.08em] text-[#60636a]">
           <div>Sürüm</div>
           <div className="text-right">Boyut</div>
           <div className="text-right">Dosya</div>
         </div>
 
-        {versions.map((entry, i) => (
+        {versions.map((entry) => (
           <div
             key={entry.version}
-            className="grid grid-cols-[1fr_auto_auto] gap-4 items-center px-5 py-3 border-b-[1px] border-[#e5e0d8] last:border-b-0 hover:bg-[#faf5ed] transition-colors"
+            className="grid grid-cols-[1fr_auto_auto] gap-4 items-center px-6 py-3 border-b border-[#ecebe6] last:border-b-0 hover:bg-[#f8f7f4] transition-colors"
           >
-            {/* Version + optional date */}
-            <div className="flex items-baseline gap-2 flex-wrap">
-              <span className="text-[14px] font-bold font-mono">
+            <div>
+              <span className="text-[14px] font-bold text-[#111113]">
                 v{entry.version}
               </span>
             </div>
-            {/* Size */}
-            <div className="text-right text-[13px] tabular-nums text-[#6b6b6b]">
+            <div className="text-right text-[13px] tabular-nums text-[#60636a]">
               {formatBytes(entry.size)}
             </div>
-            {/* Links */}
             <div className="flex items-center gap-3 text-right">
               <a
                 href={entry.url}
-                className="text-[13px] font-bold text-[#16a34a] hover:text-[#15803d] transition-colors"
+                className="text-[13px] font-bold text-[#059669] hover:text-[#047857] transition-colors"
               >
                 .exe
               </a>
               {entry.signature ? (
                 <a
                   href={entry.signature}
-                  className="text-[12px] text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors font-mono"
+                  className="text-[12px] text-[#60636a] hover:text-[#111113] transition-colors"
                 >
                   .sig
                 </a>
               ) : (
-                <span className="text-[12px] text-[#ccc] font-mono">
-                  &mdash;
-                </span>
+                <span className="text-[12px] text-[#ccc]">&mdash;</span>
               )}
             </div>
           </div>
@@ -224,27 +192,38 @@ function VersionHistory({
   );
 }
 
+function Footer() {
+  return (
+    <footer className="border-t border-[#d8d6ce]">
+      <div className="mx-auto max-w-4xl px-6 py-8 text-center text-[13px] text-[#60636a]">
+        Ceneyra Inner &copy; {new Date().getFullYear()}
+      </div>
+    </footer>
+  );
+}
+
+/* ============================================
+   Ana sayfa
+   ============================================ */
+
 export default function Home() {
   const latestRelease = getLatestRelease();
   const versions = getVersionHistory();
 
   if (!latestRelease) {
     return (
-      <>
-        <main className="flex-1 flex items-center justify-center px-5">
-          <div className="text-center">
-            <div className="mb-4 inline-flex items-center gap-2 border-[2px] border-[#1a1a1a] bg-[#ffd166] px-4 py-2 shadow-hard-sm">
-              <span className="text-[13px] font-bold text-[#5c3d00]">
-                bi&apos; şeyler ters gitti
-              </span>
-            </div>
-            <p className="text-[#6b6b6b]">
-              Güncelleme bilgisi okunamadı. Biraz sonra tekrar dene.
-            </p>
+      <main className="flex-1 flex items-center justify-center px-6 min-h-screen">
+        <div className="text-center">
+          <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#d8d6ce] bg-white/80 px-4 py-2 backdrop-blur-sm">
+            <span className="text-[13px] font-semibold text-[#60636a]">
+              Güncelleme bilgisi okunamadı
+            </span>
           </div>
-        </main>
-        <Footer />
-      </>
+          <p className="text-[#60636a] text-sm">
+            Biraz sonra tekrar dene.
+          </p>
+        </div>
+      </main>
     );
   }
 
@@ -254,21 +233,19 @@ export default function Home() {
   );
 
   return (
-    <>
-      <main className="flex-1">
-        <Hero
-          version={latestRelease.version}
-          date={latestRelease.pub_date}
-        />
-        <DownloadCard
-          version={latestRelease.version}
-          size={currentEntry?.size ?? 0}
-          url={platform?.url ?? "#"}
-          signature={platform?.signature ?? ""}
-        />
-        <VersionHistory versions={versions} />
-      </main>
+    <main className="flex-1">
+      <Hero
+        version={latestRelease.version}
+        date={latestRelease.pub_date}
+      />
+      <DownloadCard
+        version={latestRelease.version}
+        size={currentEntry?.size ?? 0}
+        url={platform?.url ?? "#"}
+        signature={platform?.signature ?? ""}
+      />
+      <VersionHistory versions={versions} />
       <Footer />
-    </>
+    </main>
   );
 }
