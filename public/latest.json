@@ -1,11 +1,11 @@
 {
-    "version":  "0.6.6",
-    "notes":  "Ceneyra Inner v0.6.6",
-    "pub_date":  "2026-09-10T06:40:34Z",
+    "version":  "0.6.7",
+    "notes":  "Ceneyra Inner v0.6.7",
+    "pub_date":  "2026-09-11T09:33:24Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRbkdLaXAzOFRzazZtWkdoVzluMGJpTjErUUVGZ3RialN4a0VtejlZRzNzOE9wK011RE1jc3d4VDA2S1ZJSHlnQ1RjU1RPa20vSUlGZlZwVjAyVVZ2N09RZzFBMzllYlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MDIyNDI4CWZpbGU6Q2VuZXlyYSBJbm5lcl8wLjYuNl94NjQtc2V0dXAuZXhlCm05ZTFpUEdwOEYwV2FJakgwRktrMWVudGRydTBnNWplWWs1dmZaVDArZDhPdmo3YmlqeDQ4Vm9ESjhQUk5JYTl4cUlFN0YrMGhNRTg0YkNPaXprV0F3PT0K",
-                                             "url":  "https://inner.ceneyra.com/Ceneyra-Inner-0.6.6-windows-x86_64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRbkdLaXAzOFRzazUvOE54Zy94ZW5may9NUzdCQTgyU2EwQjJRaE5mRkI1R2NVbkJKbjRBMkhRdWYvejcvQ3MyUXUrOG1zU0hMeEx1b0dJT1kyME9NZ0kweCtGS3dMQ2dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MTE5MTE2CWZpbGU6Q2VuZXlyYSBJbm5lcl8wLjYuN194NjQtc2V0dXAuZXhlCjFIbDhHbjdNRlQyMWs3VmRJL0NxMGU5TnFET2ZFd2pQZ0hNN1FzcUhXbmZsVlllMnRTVXptUXRkWmNGajJmQzRMUC95amloQUZGNGhReHdQbXdJV0RnPT0K",
+                                             "url":  "https://inner.ceneyra.com/Ceneyra-Inner-0.6.7-windows-x86_64-setup.exe"
                                          }
                   }
 }
