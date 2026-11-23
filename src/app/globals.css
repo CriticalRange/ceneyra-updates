@@ -1,77 +1,106 @@
 @import "tailwindcss";
 
-/* ============================================
-   Ceneyra Inner — Update Portal
-   Ana uygulama ile aynı tasarım dili
-   ============================================ */
-
-:root {
-  --app-bg: #f2f0e9;
-  --app-ink: #111113;
-  --app-muted: #60636a;
-  --app-line: #d8d6ce;
-  --app-panel: rgba(255, 255, 255, 0.88);
-  --app-panel-solid: #ffffff;
-  --app-radius: 18px;
-  --app-shadow: 0 18px 46px rgba(16, 18, 24, 0.09);
-  --app-shadow-strong: 0 20px 52px rgba(0, 0, 0, 0.18);
-  --accent: #059669;
-  --accent-hover: #047857;
+@theme {
+  --color-page: #f2f0e9;
+  --color-ink: #111113;
+  --color-muted: #60636a;
+  --color-line: #d8d6ce;
+  --color-divider: #ecebe6;
+  --color-surface: #f8f7f4;
+  --color-accent: #059669;
+  --color-accent-hover: #047857;
 }
 
-* {
-  box-sizing: border-box;
+@layer base {
+  html {
+    background-color: var(--color-page);
+  }
+
+  body {
+    font-family: "Avenir Next", "Figtree", "Trebuchet MS", "Segoe UI",
+      system-ui, -apple-system, sans-serif;
+    background:
+      radial-gradient(900px 520px at 8% -12%, #ffffff 0%, transparent 60%),
+      radial-gradient(900px 520px at 100% 0%, #dedbd2 0%, transparent 58%),
+      linear-gradient(180deg, var(--color-page), #fbfaf7);
+    color: var(--color-ink);
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-divider);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #b9b7af;
+    border: 2px solid var(--color-divider);
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #96948d;
+  }
 }
 
-html {
-  background-color: #f2f0e9;
+@layer components {
+  .content-width {
+    @apply mx-auto max-w-4xl px-6;
+  }
+
+  .section-label {
+    @apply text-[11px] font-extrabold uppercase tracking-[0.08em] text-muted;
+  }
+
+  .panel {
+    border: 1px solid var(--color-line);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 18px 46px rgba(16, 18, 24, 0.09);
+    backdrop-filter: blur(18px);
+  }
+
+  .download-button {
+    @apply flex shrink-0 select-none items-center justify-center gap-2 rounded-xl px-8 py-3 text-sm font-bold text-white;
+    background: linear-gradient(165deg, #101113, #1d1e22 48%, #08090a);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  }
 }
 
-body {
-  margin: 0;
-  font-family: "Avenir Next", "Figtree", "Trebuchet MS", "Segoe UI",
-    system-ui, -apple-system, sans-serif;
-  background:
-    radial-gradient(900px 520px at 8% -12%, #ffffff 0%, transparent 60%),
-    radial-gradient(900px 520px at 100% 0%, #dedbd2 0%, transparent 58%),
-    linear-gradient(180deg, var(--app-bg), #fbfaf7);
-  color: var(--app-ink);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+@media (prefers-reduced-motion: no-preference) {
+  .download-button {
+    transition: transform 150ms ease;
+  }
+
+  .download-button:hover {
+    transform: translateY(-1px);
+  }
+
+  .enter-1,
+  .enter-2,
+  .enter-3 {
+    animation: fade-up 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+
+  .enter-2 {
+    animation-delay: 0.08s;
+  }
+
+  .enter-3 {
+    animation-delay: 0.16s;
+  }
 }
 
-::selection {
-  background: #111113;
-  color: #ffffff;
-}
-
-/* Scrollbar — ana uygulamayla aynı */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #ecebe6;
-}
-::-webkit-scrollbar-thumb {
-  background: #b9b7af;
-  border-radius: 999px;
-  border: 2px solid #ecebe6;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #96948d;
-}
-
-/* Soft panel — ana uygulamadaki mono-panel karşılığı */
-.panel {
-  border: 1px solid var(--app-line);
-  background: var(--app-panel);
-  border-radius: var(--app-radius);
-  box-shadow: var(--app-shadow);
-  backdrop-filter: blur(18px);
-}
-
-/* Animations */
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -81,14 +110,4 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.enter-1 {
-  animation: fade-up 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
-}
-.enter-2 {
-  animation: fade-up 0.4s 0.08s cubic-bezier(0.2, 0.8, 0.2, 1) both;
-}
-.enter-3 {
-  animation: fade-up 0.4s 0.16s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }

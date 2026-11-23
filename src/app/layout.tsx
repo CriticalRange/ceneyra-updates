@@ -1,41 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { ReactNode } from "react";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const title = "Ceneyra Inner — Güncellemeler";
+const description = "Ceneyra Inner için en son güncellemeleri indirin.";
 
 export const metadata: Metadata = {
-  title: "Ceneyra Inner — Güncellemeler",
-  description:
-    "Ceneyra Inner için en son güncellemeleri indirin.",
+  title,
+  description,
   keywords: ["Ceneyra", "Inner", "download", "updates", "Windows"],
-  openGraph: {
-    title: "Ceneyra Inner — Güncellemeler",
-    description:
-      "Ceneyra Inner için en son güncellemeleri indirin.",
-    type: "website",
-  },
+  openGraph: { title, description, type: "website" },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html
-      lang="tr"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="tr" className="h-full antialiased">
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
 }
